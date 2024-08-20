@@ -1,0 +1,52 @@
+application:
+  local:
+    url_settings:
+      url: https://localhost:3001
+      path: /services/preapp?customerid=zeitro
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
+
+  test:
+    url_settings:
+      url: https://app.zeitro.us
+      path: /services/preapp?customerid=zeitro
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
+
+  prod:
+    url_settings:
+      url: https://app.zeitro.com
+      path: /services/preapp?customerid=zeitro
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
+
+loans:
+  local:
+    url_settings:
+      url: https://localhost:3002
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
+
+  test:
+    url_settings:
+      url: https://lo.zeitro.us
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
+
+  prod:
+    url_settings:
+      url: https://lo.zeitro.com
+    proxy_settings:
+      enable_proxy: False
+      host: http://localhost
+      port: 7890
